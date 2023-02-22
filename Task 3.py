@@ -27,7 +27,11 @@ convert it to a list of variable names for python in snake case format ["first_i
 
 veriable_names = ["FirstItem", "FriendsList", "MyTuple"]
 
-
+veriable_names = veriable_names[0].lower() + veriable_names[1:]
+for name in range(len(veriable_names)):
+    if name.isupper():
+        snake = name.replace(name, f"_{name.lower()}")
+    print (veriable_names[name])
 
 #    if veriable.isupper():
 #        snake = veriable.replace(veriable, f"_{veriable.lower()}")
